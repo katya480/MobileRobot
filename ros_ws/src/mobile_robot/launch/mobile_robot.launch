@@ -1,0 +1,18 @@
+<launch>
+
+    <!-- Запуск USB-камеры -->
+    <node pkg="usb_cam"
+          type="usb_cam_node"
+          name="usb_cam"
+          output="screen"/>
+
+    <!-- Запуск RViz по параметру -->
+    <arg name="rviz" default="true"/>
+
+    <group if="$(arg rviz)">
+        <node pkg="rviz"
+              type="rviz"
+              name="rviz"/>
+    </group>
+
+</launch>
