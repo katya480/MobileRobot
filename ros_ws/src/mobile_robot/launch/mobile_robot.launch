@@ -1,13 +1,11 @@
 <launch>
 
-    <!-- Запуск USB-камеры -->
-    <node pkg="usb_cam"
-          type="usb_cam_node"
-          name="usb_cam"
-          output="screen"/>
-
-    <!-- Запуск RViz по параметру -->
     <arg name="rviz" default="true"/>
+
+    <node pkg="teleop_twist_keyboard"
+          type="teleop_twist_keyboard.py"
+          name="teleop_keyboard"
+          output="screen"/>
 
     <group if="$(arg rviz)">
         <node pkg="rviz"

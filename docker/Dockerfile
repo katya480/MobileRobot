@@ -6,7 +6,7 @@ RUN apt update && apt install -y \
     net-tools \
     nano \
     openssh-server \
-    ros-noetic-usb-cam \
+    ros-noetic-teleop-twist-keyboard \
     ros-noetic-rviz \
     ros-noetic-rqt \
     ros-noetic-rqt-common-plugins

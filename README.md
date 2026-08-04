@@ -48,7 +48,7 @@ ros_ws
 
 ## Используемые устройства
 
-- USB Camera
+- Keyboard (Teleop Twist Keyboard)
 - Battery State
 - Differential Drive Controller
 
